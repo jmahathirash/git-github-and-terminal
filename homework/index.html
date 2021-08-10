@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="myButton">
+    <button class="myButton" data-url:'https://data.cityofnewyork.us/resource/erm2-nwe9.json?borough=BRONX'>Bronx</button>
+    <button class="myButton">Manhattan</button>
+    <button class="myButton">Staten Island</button>
+    <button class="myButton">Brooklyn</button>
+    <button class="myButton">Queens</button>
+</div>
+
+
+
+    <h1>Crime app</h1>
+  <dl>
+    <dt>Borough</dt>
+    <dd id="borough"></dd>
+
+    <dt>Descriptor</dt>
+    <dd id="descriptor"></dd>
+
+    <dt>Agency</dt>
+    <dd id="agency"></dd>
+
+    <dt>Resolution Description</dt>
+    <dd id="resolutiondecription"></dd>
+  </dl>
+    <script src="app.js"></script>
+</body>
+</html>
