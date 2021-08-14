@@ -1,9 +1,10 @@
-console.log('Welcome to my console game');
+alert('Inspect the page and go into the console to play!')
+console.log('Welcome to my console game!');
 console.log('You are Dominic Toretto, Leader of the USS Family')
 console.log('Aliens are threatening your family! Defeat the Aliens!')
 console.log('Type hero.attack(alien) to attack alien')
 console.log('Type alien.attack(hero) to attack hero')
-// Objects
+
 
 const hero = {
     hull: 20,
@@ -27,7 +28,7 @@ const hero = {
         }
     }
 }
-const alien = {
+var alien = {
     hull: Math.round((Math.random() * (6 - 3)) + 3),
     firepower: Math.round((Math.random() * (4 - 2)) + 2),
     accuracy: (Math.random() * (.8 - .6)) + .6,
