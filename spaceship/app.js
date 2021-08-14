@@ -30,9 +30,9 @@ const hero = {
 const alien = {
     hull: Math.round((Math.random() * (6 - 3)) + 3),
     firepower: Math.round((Math.random() * (4 - 2)) + 2),
-    accuracy: (Math.random() * (.8 - .6)) + .6, //for later figure out a way to make it to the hundredth?
+    accuracy: (Math.random() * (.8 - .6)) + .6,
     isAlive: true,
-    attack(target) {
+    attack (target) {
         let ranNum = Math.random();
         console.log(`Accuracy threshold is ${ranNum}`);
         if (ranNum < this.accuracy) {
@@ -42,13 +42,14 @@ const alien = {
             if (target.hull <= 0) {
                 target.isAlive = false;
                 console.log(`Your Family is destroyed! Screw you Toretto!`);
-
+            
             }
         } else {
             console.log(`You dodged the attack!`);
         }
     }
 }
+
 const battle = (player, computer) => {
     while (player.isAlive && computer.isAlive) {
         player.attack(computer);
