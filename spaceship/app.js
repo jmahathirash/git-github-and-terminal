@@ -1,8 +1,8 @@
 console.log('Welcome to my console game');
 console.log('You are Dominic Toretto, Leader of the USS Family')
 console.log('Aliens are threatening your family! Defeat the Aliens!')
-//hero.attack(alien) to attack alien
-//alien.attack(hero) to attack hero
+console.log('Type hero.attack(alien) to attack alien')
+console.log('Type alien.attack(hero) to attack hero')
 // Objects
 
 const hero = {
